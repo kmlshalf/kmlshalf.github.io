@@ -52,7 +52,7 @@ function draw() {
 }
 
 function windowResized() {
-  resizeCanvas(windowWidth, 560);
+  resizeCanvas(windowWidth, windowHeight);
 }
 
 // Start it up
