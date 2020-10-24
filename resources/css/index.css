@@ -241,3 +241,14 @@ button:hover {
 		overflow: hidden;
 	}
 }
+
+@media screen and (max-width: 750px) {
+	#projectcontainer {
+	display: inline-flex;
+	flex-wrap: wrap;
+	align-items: stretch;
+	font-size: 20px;
+	margin-left: 10px;
+}
+
+}
