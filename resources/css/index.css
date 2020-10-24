@@ -1,0 +1,223 @@
+body {
+	height: auto;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	font-family: 'Rubik', sans-serif;
+	color: #333333;
+	font-size: 18px;
+}
+
+h1 {
+	font-weight: 700;
+	color: #FB6842;
+	font-size: 80px;
+}
+
+h2 {
+	font-weight: 700;
+	color: #FB6842;
+	font-size: 67px;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+
+/*GENERAL PAGE FORMATTING START*/
+
+.top-content {
+	margin-top: -90px;
+	padding-right: 16vw;
+	padding-left: 17vw;
+	/*overflow: hidden;*/
+	/*top: 0;*/
+	/*position: absolute;*/
+}
+/*reducing space between top title and bottom*/
+#top-title {
+	margin-bottom: -30px;
+}
+/*formatting text for intro paragraph*/
+.intro {
+	font-size: 24px;
+	line-height: 40px;
+}
+#sketch-holder {
+	position: relative;
+}
+/*holds all content in index.html*/
+.content-container {
+	/*max-width: 796px;*/
+	top: 0;
+	position: absolute;
+	margin-left: 3vw;
+	margin-right: 3vw;
+	padding-top: 120px;
+}
+
+/*individual div containers*/
+.container { 
+	margin-bottom: 80px;
+}
+
+.footer-content {
+	padding-right: 17vw;
+	padding-left: 17vw;
+}
+/*for inline elems (mainly main title)*/
+.inline {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+#nav {
+	/*margin-left: 3vw;*/
+	margin-bottom: 30px;
+}
+
+/*for all individual link elems (social links and nav menu)*/
+.link, .navlink {
+	font-weight: 500;
+	margin-right: 65px;
+	text-decoration: none;
+	color: #333333;
+	font-size: 24px;
+	line-height: 50px;
+}
+
+.link:hover, .navlink:hover {
+	color: #FB6842;
+	transition: 0.3s;
+}
+
+/*when a menu element is active*/
+.active {
+	 border-bottom: 2px solid currentColor;
+	 color: #FB6842;
+}
+
+.logo {
+	margin-right: 30px;
+}
+
+/*GENERAL PAGE FORMATTING END*/
+
+/*CONTENT HIDE/SHOW STUFF START*/
+#experiments {
+	display: none;
+}
+/*CONTENT HIDE/SHOW STUFF END*/
+
+/*PROJECT CARDS FORMATTING START*/
+.hero {
+	height: 300px;
+}
+
+/*Image hover zoom effect*/
+.img-hover-zoom{
+	height: 300px;
+	overflow: hidden;
+}
+
+.img-hover-zoom img {
+  transition: transform .5s ease;
+}
+
+.img-hover-zoom:hover img {
+  transform: scale(1.05);
+}
+
+/*Entire project card formatting*/
+.project {
+	margin-top: 20px;
+	margin-right: 40px;
+	margin-bottom: 30px;
+}
+
+.project:hover {
+	cursor: pointer;
+}
+
+/*Work section formatting*/
+#work {
+	margin-right: 10vw;
+	display:flex;
+	/*width: 100%;*/
+}
+
+#projectcontainer {
+	display: inline-flex;
+	flex-wrap: wrap;
+	align-items: stretch;
+	font-size: 20px;
+}
+
+/*FILTER START*/
+#filtercontainer {
+	display: flex;
+	flex-direction: column;
+	margin: initial;
+	margin-left: -210px;
+	margin-right: 7vw;
+	/*width: 20vw;*/
+}
+
+.btn {
+	color: #828282;
+	font-weight: 500;
+	margin-bottom: 10px;
+	font-size: 18px;
+	text-align: left;
+	min-width: 110px;
+}
+
+.active2 {
+	color: #FB6842;
+	/*font-weight: 600;*/
+}
+
+.hide {
+	display:none;
+}
+
+button {
+	border: none;
+	background: none;
+}
+
+button:focus {
+	outline: 0;
+}
+
+button:hover {
+	cursor: pointer;
+	color: #FB6842;
+	transition: 0.5s;
+	/*font-weight: 700;*/
+}
+/*FILTER END*/
+/*PROJECT FORMATTING END*/
+
+/*Experiments*/
+#workarea {
+	margin-top: 30px;
+	padding: 20px;
+	width: 850px;
+	height: 600px;
+	outline: 2px solid #FB6842;
+}
+/*PROJECT CARDS FORMATTING END*/
+
+/*TAN BACKGROUND FORMATTING START*/
+#main-content {
+	padding-top: 50px;
+	padding-bottom: 60px;
+	background-color: #FFFAF2;
+	width: 85%;
+	margin-left: -3vw;
+	padding-left: 20vw;
+}
+/*TAN BACKGROUND FORMATTING END*/
