@@ -205,8 +205,8 @@ button:hover {
 #workarea {
 	margin-top: 30px;
 	padding: 20px;
-	width: 850px;
-	height: 600px;
+	width: 62vw;
+	height: 78vh;
 	outline: 2px solid #FB6842;
 }
 /*PROJECT CARDS FORMATTING END*/
@@ -221,3 +221,23 @@ button:hover {
 	padding-left: 20vw;
 }
 /*TAN BACKGROUND FORMATTING END*/
+
+/*responsiveness*/
+@media screen and (max-width: 1080px) {
+	#filtercontainer {
+		display: none;
+	}
+}
+
+@media screen and (max-width: 1300px) {
+	.hero {
+		height: 50vw;
+	}
+	.desc {
+		margin-top: 0;
+	}
+	.img-hover-zoom{
+		height: 50vw;
+		overflow: hidden;
+	}
+}
