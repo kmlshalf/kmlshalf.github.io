@@ -1,7 +1,221 @@
+/*GENERAL CSS FORMATTING FOR ALL PROJECTS.  REFER TO INDIVIDUAL CSS PAGES FOR UNIQUE FORMATTING.*/
+
+html {
+	scroll-behavior: smooth;
+}
+
 body {
-	margin: 0;
+	margin: 0 auto;
+	padding: 0;
 	width: 100%;
 	font-family: 'Rubik', sans-serif;
 	color: #333333;
 	font-size: 18px;
+}
+
+p {
+	line-height: 26px;
+}
+
+a {
+ 	text-decoration: none;
+ }
+
+h1 {
+	color: #FB6842;
+	font-size: 56px;
+}
+
+h2 {
+	color: #FB6842;
+	font-size: 24px;
+	padding-bottom: 10px;
+}
+
+h3 {
+	font-size: 18px;
+}
+
+li {
+	padding-bottom: 10px;
+}
+
+/*sidebar formatting*/
+#sidebar {
+	margin-left: 16px;
+	margin-top: 36px;
+	position: fixed;
+}
+
+@media screen and (max-width: 1080px) {
+ 	#sidebar {
+ 		position: static;
+ 	}
+ }
+
+#homebutton {
+	margin-left: 25px;
+}
+
+#homebutton a{
+	color: #333333;
+}
+
+#homebutton a:hover{
+	color: #FB6842;
+	transition: 0.3s;
+}
+
+
+#menu {
+	margin-top: 150px;
+ 	list-style-type: none;
+ 	line-height: 26px;
+ }
+
+ #menu a{
+	margin-top: 150px;
+ 	list-style-type: none;
+ 	color: #828282;
+ 	/*line-height: 36px;*/
+ }
+
+ #menu a:hover{
+ 	color: #333333;
+ 	transition: 0.5s;
+ 	/*line-height: 36px;*/
+ }
+
+ @media screen and (max-width: 1080px) {
+ 	#menu {
+ 		display: none;
+ 	}
+ }
+
+/*general formatting: main content, sections*/
+ #main_content {
+ 	width: 57%;
+ 	margin: auto;
+ 	padding-top: 100px;
+ 	padding-left: 80px;
+ }
+
+ @media screen and (max-width: 1080px) {
+ 	#main_content {
+ 		width: 80%;
+ 		padding-left: 0px;
+ 	}
+ }
+
+ .section {
+ 	margin-top: 90px;
+ }
+
+ .subsection {
+ 	margin-top: 50px;
+ }
+
+/*top section formatting*/
+#summary {
+	font-size: 20px;
+}
+
+#segments {
+	padding-top: 20px;
+	display: inline-flex;
+}
+
+.seg {
+	margin-right: 64px;
+}
+
+.title {
+	font-weight: 500;
+	padding-bottom: 8px;
+}
+
+#hero {
+	padding-top: 100px;
+	padding-bottom: 10px;
+	width: 50vw;
+}
+
+/*images and embeds*/
+.video {
+	margin-top: 50px;
+	padding-bottom: 40px;
+}
+
+.image {
+	padding-top: 24px;
+	padding-bottom: 24px;
+	margin:auto;
+}
+
+@media screen and (max-width: 1080px) {
+ 	.image {
+ 		width: 600px;
+ 	}
+ }
+
+ @media screen and (max-width: 800px) {
+ 	.image {
+ 		width: 400px;
+ 	}
+ }
+
+
+
+/*tan background color*/
+.full_color_background {
+	padding-top: 30px;
+	padding-bottom: 30px;
+	background-color: #FFFAF2;
+	margin-left: -24vw;
+	padding-right: 19vw;
+	margin-right: -19vw;
+	padding-left: 24vw;
+}
+
+/*callout formatting*/
+.callout {
+	background-color: #FFFAF2;
+	margin-left: -3vw;
+	padding-right: 3vw;
+	margin-right: -3vw;
+	padding-left: 3vw;
+	padding-top: 3vw;
+	padding-bottom: 3vw;
+	margin-top: 36px;
+}
+
+.greyedtitle {
+	color: #828282;
+	/*font-weight: 500;*/
+	padding-bottom: 10px;
+}
+
+.highlighttext {
+	color: #FB6842;
+	font-weight: 500;
+	font-size: 20px;
+}
+
+/*footer formatting*/
+.footer-content {
+	margin-bottom: 80px;
+}
+
+.link {
+	font-weight: 500;
+	margin-right: 65px;
+	text-decoration: none;
+	color: #333333;
+	font-size: 24px;
+	line-height: 50px;
+}
+
+.link:hover {
+	color: #FB6842;
+	transition: 0.3s;
 }

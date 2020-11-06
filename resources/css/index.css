@@ -165,6 +165,13 @@ a {
 	/*width: 20vw;*/
 }
 
+/*responsiveness*/
+@media screen and (max-width: 1080px) {
+	#filtercontainer {
+		display: none;
+	}
+}
+
 .btn {
 	color: #828282;
 	font-weight: 500;
@@ -221,13 +228,6 @@ button:hover {
 	padding-left: 20vw;
 }
 /*TAN BACKGROUND FORMATTING END*/
-
-/*responsiveness*/
-@media screen and (max-width: 1080px) {
-	#filtercontainer {
-		display: none;
-	}
-}
 
 @media screen and (max-width: 1300px) {
 	.hero {
