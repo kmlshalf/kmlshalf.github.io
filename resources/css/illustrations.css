@@ -1,0 +1,34 @@
+.img_small {
+	width: 350px;
+}
+
+.img_small:hover {
+	cursor: pointer;
+	opacity: 0.8;
+	transition: 0.5s ease;
+}
+
+#main_content {
+	margin-left: 10vw;
+	margin-right: 10px;
+}
+
+.img_large {
+	width: 600px;
+	margin: auto;
+	padding-bottom: 30px;
+}
+
+.gallery {
+	display: inline-flex;
+}
+
+@media screen and (max-width: 1080px) {
+	.gallery {
+		display: block;
+	}
+
+	.img_small {
+		width: 80vw;
+	}
+}
