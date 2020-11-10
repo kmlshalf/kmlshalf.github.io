@@ -11,7 +11,7 @@ body {
 h1 {
 	font-weight: 700;
 	color: #FB6842;
-	font-size: 80px;
+	font-size: 80px; 
 }
 
 h2 {
@@ -164,6 +164,8 @@ a {
 }
 
 .img-hover-zoom:hover img {
+  opacity: 0.8;
+  transition: 0.5s ease;
   transform: scale(1.05);
 }
 
