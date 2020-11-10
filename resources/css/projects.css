@@ -146,7 +146,7 @@ li {
 
  .section {
  	margin-top: 90px;
- 	overflow: hidden;
+ 	/*overflow: hidden;*/
  }
 
  .subsection {
