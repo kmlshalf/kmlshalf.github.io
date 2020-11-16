@@ -1,9 +1,226 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>Mimi Shalf | Central Station</title>
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Mimi Shalf | Ubiquity Press</title>
+		<meta charset="UTF-8"> 
+		<meta content="width=device-width, initial-scale=1 user-scalable=yes" name="viewport"/>
 		<link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap" rel="stylesheet">
 		<link rel="stylesheet" type="text/css" href="resources/css/projects.css">
+		<link rel="stylesheet" type="text/css" href="resources/css/ubiquitypress.css">
+
+		<!-- favicon -->
+		<link rel="apple-touch-icon" sizes="180x180" href="resources/img/favicon_io/apple-touch-icon.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="resources/img/favicon_io/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="resources/img/favicon_io/favicon-16x16.png">
 	</head>
+	<body>
+		<div id="loader"> 
+			<div id="loadingimg" class="center"></div>
+		</div>
+		<div id="all_content">
+			<div id="sidebar">
+				<div id="homebutton"><a href="index.html#work">◄ Back to home</div></a>
+				<ul id="menu">
+					<li class="menuitem"><a href="#overview">Overview</a></li>
+					<li class="menuitem"><a href="#background">Background</a></li>
+					<li class="menuitem"><a href="#iter1">Iteration 1</a></li>
+					<li class="menuitem"><a href="#iter2">Iteration 2</a></li>
+					<li class="menuitem"><a href="#iter3">Iteration 3 (Final)</a></li>
+					<li class="menuitem"><a href="#nextsteps">Next Steps</a></li>
+					<li class="menuitem"><a href="#reflection">Reflection</a></li>
+				</ul>
+			</div>
+			<div id="main_content">
+				<div id="summary">
+					<h1>CENTRAL STATION</h1>
+					<p>Creating a website editor/builder tool for Ubiquity Press’s new journal publishing dashboard, Central Station.</p>
+					<div id="segments">
+						<div id="role" class="seg">
+							<div class="title">Role</div>
+							<div class="desc">UX Design Intern</div>
+						</div>
+						<div id="tools" class="seg">
+							<div class="title">Tools</div>
+							<div class="desc">Figma</div>
+						</div>
+						<div id="team" class="seg">
+							<div class="title">Team</div>
+							<div class="desc">Ubiquity Press</div>
+						</div>
+					</div>
+					<img id="hero" class="image" src="resources/img/bumblebee_img/bbheromock.png"/>
+				</div>
+				<div id="overview" class="full_color_background section">
+					<h2>OVERVIEW</h2>
+					<p>Ubiquity Press is an academic publishing company with a focus on open access publications.  I worked as a UX design intern there from November 2019 to September 2020 with two other design interns.</p>
+					<p>Our main project was Central Station, a dashboard for Ubiquity Press’s different journal and press publishing tools, processes, and internal work.  I worked on the project from its conception, where I helped with everything from creating a design system to mapping out the (very complicated) user flows.</p>
+					<p><span style="font-weight:500">This case study is on one specific part of Central Station that I worked on: the website builder/editor for academic press websites.</span>  If you are interested in seeing more of Central Station, please contact me!</p>
+				</div>
+
+				<div id="background" class="section">
+					<h2>BACKGROUND & RESEARCH</h2>
+					<p>As an academic publisher, Ubiquity Press had a lot of different tools for different publishing processes in many different places.  Central Station was created in an effort to centralize these processes in one place, and improve the design and experience of the existing tools.</p>
+					<p>One such tool was a website builder, which academic presses used to design websites for their journals and the organization itself.  Websites are key to publications, particularly open-access publications, as they are not only where presses can display their journals but also where they can receive submissions from new authors.</p>
+					<p>We initially started designing this tool with the intention of it being used for journal websites, but when journal websites were moved over to a different (existing) software we switched to making the tool for press websites only. </p>
+					<div class="callout">
+						<div class="greyedtitle">THE REQUEST</div>
+						<div class="highlighttext">We were tasked with making an easy and convenient website builder in Central Station for presses to create their own custom websites.</div>
+					</div>
+					<div class="subsection">
+						<h3>PROBLEM</h3>
+						<p>Currently, there are two ways to design a website through Ubiquity Press: presses can send their website design preferences to Ubiquity Press, who will then build the website for them, or they can use the website design tool in a Ubiquity Press platform called Jura.</p>
+						<img class="image morepaddingtop morepaddingbottom" src="resources/img/ubiquity_img/oldflow.jpg"/>
+						<p>We got some insights on the current website design flows from talking with press managers at Virginia Tech Press and Stockholm University Press about what they wanted from the publishing platform and their experience with Jura.  We also talked with Ubiquity Press developers, publication managers, and staff who would also be using Central Station.</p>
+						<img class="image" src="resources/img/ubiquity_img/postits.jpg"/>
+						<p>There were a few issues with these processes, both internally and externally.</p>
+						<p>Most of the external problems had to do with Jura’s design.  In order to add or change content on a website, users had to go into Journal Settings and use a wordpress-esque HTML editor.  In addition, there were a lot of random buttons for different features that had been haphazardly added over time and had little context or explanation as to what they were for.</p>
+						<img class="image morepaddingtop" src="resources/img/ubiquity_img/jura.jpg"/>
+						<p>Internal problems had to do with efficiency -- developers were spending a lot of time fulfilling press website design requests when they didn’t have to.  The company wanted to give more agency to presses so that developers had more time to work on one of the many other projects happening.</p>	
+					</div>
+					<div class="callout">
+						<div class="greyedtitle">THE PROBLEM</div>
+						<div class="highlighttext">Externally, most press editors had no idea how to use HTML, and found Jura’s website editor unintuitive, confusing, and extremely difficult to understand or use.</div>
+						<p><div class="highlighttext">Internally, Ubiquity Press developers were spending a lot of time making websites or taking website edit requests which was inefficient.</div></p>
+					</div>
+					<div class="subsection">
+						<h3>GOALS & CONSIDERATIONS</h3>
+						<p>We had a few things to take into account while working on this segment of Central Station, namely:</p>
+						<ul>
+							<li><span style="font-weight:500">Squarespace and Weebly-esque designs (drag and drop, custom interactive layouts) were not possible,</span> given the resources, time, and priority of this tool.  The website building tool was one part in a larger product, unlike Squarespace where website design is the product.</li>
+							<li><span style="font-weight:500">Most of the press people using the tool would not have a web design or development background</span>, and didn’t want to spend a lot of time creating websites.</li>
+							<li><span style="font-weight:500">Presses had a lot of specific features they wanted</span>, like journal carousels, which explained why there were a lot of random added-on feature options in Jura.</li>
+						</ul>
+						<div class="callout">
+							<div class="greyedtitle">THE GOAL</div>
+							<div class="highlighttext">We wanted to create a website builder that was not only fast and easy to use even for complete beginners but also would be able to adapt to add-ons later, such as new features or specific requests.</div>
+							<p>Moreover, we wanted to cut out Ubiquity Press as the middle man for press website design and make it so presses could create their own websites completely independently.  </p>
+						</div>
+					</div>
+				</div>
+
+				<div id="iter1" class="section">
+					<h2>ITERATION 1</h2>
+					<p>Originally, the website builder was only supposed to be for journal websites.  Hence, we embedded the builder in the Create New Journal process on Central Station, with the option of editing later in Journal Settings.</p>
+					<img class="image morepaddingtop" src="resources/img/ubiquity_img/iteration1basicflow.jpg"/>
+					<div class="caption morepaddingbottom morepaddingtop">The general flow for journal creation with website building</div>
+					<p>With this iteration, we wanted to see if we could modify the existing Jura design to be easier to use.  We kept the HTML editor, but tried adding templates to make page design more convenient.</p>
+					<img class="image" src="resources/img/ubiquity_img/template.png"/>
+					<div class="caption morepaddingbottom">An example template.  Users could choose different page templates from “Page Type”.</div>
+					<img class="image morepaddingtop" src="resources/img/ubiquity_img/iteration1flow.svg"/>
+					<div class="caption morepaddingbottom">Iteration 1 flow</div>
+					<div class="callout">
+						<div class="greyedtitle">PROBLEMS: ITERATION 1</div>
+						<div class="highlighttext">Adding templates did not solve the major problems people had with the Jura design, mainly that it was hard to customize anything and most people didn’t know HTML to start with.</div>
+						<p>Furthermore, it was still difficult to do more complicated features (like an image carousel) without adding custom buttons. </p>
+					</div>
+					<p class="morepaddingtop">Later, the team decided to move most of the journal set-up process to a software called OJS (Open Journal Systems), which included the creation of journal websites.  We shelved our designs and worked on other parts of Central Station.</p>
+				</div>
+
+				<div id="iter2" class="section">
+					<h2>ITERATION 2</h2>
+					<p>Our website builder was brought back when the team decided that press websites would be created on Central Station.  As a result, we moved the builder to the Create New Press flow, with the option of editing later in Press Settings.  We also further integrated visual style (like fonts and colors) and the page navigation set-up.</p>
+					<img class="image morepaddingtop morepaddingbottom" src="resources/img/ubiquity_img/iteration2basicflow.jpg"/>
+					<p>We decided to scrap the idea of keeping the HTML editor, and instead try out a row and columns design similar to one that another intern was working on for a different Ubiquity Press product.</p>
+					<p>In this iteration, we attempted to create a modular design flow where users created sections that they could add modules to.  Pages were accessed via the navigation set-up, and modules could be customized to be different features, such as an image, text box, or social media widgets.</p>
+					<img class="image" src="resources/img/ubiquity_img/template.png"/>
+					<div class="caption morepaddingbottom">An example module.  It would display different fields or options depending on the module type.</div>
+					<img class="image morepaddingtop" src="resources/img/ubiquity_img/iteration2flow.svg"/>
+					<div class="caption morepaddingbottom">Iteration 2 flow</div>
+					<div class="callout">
+						<div class="greyedtitle">PROBLEMS: ITERATION 2</div>
+						<p>After reviewing this design with the Ubiquity Press team, we discovered a few fundamental problems:</p>
+						<ul>
+							<li>Our section/module system didn’t work for multi-column layouts; it could only be assumed that everything simply stacked on top of each other.</li>
+							<li>The design was just really confusing and not intuitive.  It was difficult to map the section you were working on to the website, and we had users set up text and colors but didn’t make it clear how or where they would be used.</li>
+							<li>We didn’t take into account the look or design of the website’s menu, margins, or similar small details.</li>
+						</ul>
+					</div>
+					<p class="morepaddingtop">Later, the team decided to move most of the journal set-up process to a software called OJS (Open Journal Systems), which included the creation of journal websites.  We shelved our designs and worked on other parts of Central Station.</p>
+				</div>
+
+				<div id="iter3" class="section">
+					<h2>ITERATION 3 (FINAL)</h2>
+					<p>In the final iteration, we kept the overall flow of website creation with Create New Press and mainly focused on improving the experience of making the layout for and adding content to pages and navigation.  I sketched some user flows for us to help better plan out the website builder process before jumping into Figma again.</p>
+					<div class="gallery">
+							<!-- Images used to open the lightbox -->
+							<div class="row">
+								<div class="col">
+									<img class="gallimg_smallup" src="resources/img/ubiquity_img/sketch1.jpg" onClick="openModal(1);showImg(1)"/>
+								</div>
+								<div class="col">
+									<img class="gallimg_smallup" src="resources/img/ubiquity_img/sketch2.jpg" onClick="openModal(1);showImg(2)"/>
+								</div>
+								<div class="col">
+									<img class="gallimg_smallup" src="resources/img/ubiquity_img/sketch3.jpg" onClick="openModal(1);showImg(3)"/>
+								</div>
+							</div>
+							<!--Modal Lightbox-->
+							<div class="modal">
+								<span class="close cursor" onclick="closeModal(1)">&times;</span>
+								<div class="modalContent">
+									<img class="gallimg_large showimage" src="resources/img/ubiquity_img/sketch1.jpg"/>
+									<img class="gallimg_large showimage" src="resources/img/ubiquity_img/sketch2.jpg"/>
+									<img class="gallimg_large showimage" src="resources/img/ubiquity_img/sketch3.jpg"/>
+								</div>
+							</div>
+						</div>
+					<p>I then made some quick lo-fi mockups on figma to help better define the new flow.</p>
+					<img class="image" style="width:800px" src="resources/img/ubiquity_img/lofi.jpg"/>
+					<p>To address some of the problems with the previous iteration, we put the section and module editor right next to the page preview, rather than having it at the top of the page.  Modules were more clearly laid out in a row within sections (which stacked on top of each other), and their dimensions could be defined in the editor.</p>
+					<div class="gallery">
+							<!-- Images used to open the lightbox -->
+							<div class="row">
+								<div class="col">
+									<img class="gallimg_smallup" src="resources/img/ubiquity_img/module.png" onClick="openModal(2);showImg(4)"/>
+								</div>
+								<div class="col">
+									<img class="gallimg_smallup" src="resources/img/ubiquity_img/addmodule.png" onClick="openModal(2);showImg(5)"/>
+								</div>
+							</div>
+							<!--Modal Lightbox-->
+							<div class="modal">
+								<span class="close cursor" onclick="closeModal(2)">&times;</span>
+								<div class="modalContent">
+									<img class="gallimg_large showimage" src="resources/img/ubiquity_img/sketch1.jpg"/>
+									<img class="gallimg_large showimage" src="resources/img/ubiquity_img/sketch2.jpg"/>
+								</div>
+							</div>
+						</div>
+						<div class="caption morepaddingbottom">An example module and add module.  Module type is chosen when creating the module, but can be changed later by clicking the 3 dots in the top right corner.</div>
+					<p>I also made the visual settings (font, color), into “styles” similar to Figma and Adobe XD styles.  These were set at the beginning of the process and could be used in all the modules or changed as needed.</p>
+					<img class="image" src="resources/img/ubiquity_img/textstylemodule.jpg"/>
+					<div class="caption morepaddingbottom">Using text styles in a text module.</div>
+					<p>We also added a menu design section so that the menu design could also be adjusted.  Below is the final flow.</p>
+					<img class="image morepaddingtop" src="resources/img/ubiquity_img/iteration3flow.svg"/>
+					<div class="caption">Iteration 3 flow</div>
+				</div>
+
+				<div id="nextsteps" class="section">
+					<h2>NEXT STEPS</h2>
+					<p>When I ended my internship, the Ubiquity Press team had approved of the design and we were preparing the third iteration for user testing with press managers and administrators, who would be the main stakeholders using the web builder tool.  It is currently going through user testing as of November 2020.  While this tool was not ready to be shipped yet, a few of the more general parts of Central Station were in the process of being shipped.</p>
+				</div>
+
+				<div id="reflection" class="section">
+					<h2>REFLECTION</h2>
+					<p>Working on this tool was quite the ordeal!  It not only took us a while to figure out a viable flow for it, but we also were learning bits and pieces about how the website building process worked while we were designing.  </p>
+					<p>My main takeaway from this project was to spend more time on planning those user flows!  I think a lot of the time we just plunged straight into creating designs without really thinking them through first.  When we took some time to really map out some flows, we were more successful.</p>
+				</div>
+
+				<div class="footer-content section">
+				<h1>ABOUT THIS WEBSITE.</h1>
+				<p>This is my constant work in progress (think: personalized tumblr blog).  I wanted to make a website that I could easily add to and that would grow with me.  Check back to see what I do!
+				</p>
+				<div class="socials">
+					<a class="link" href="https://www.instagram.com/pamimus/" target=_blank>INSTAGRAM</a>
+					<a class="link" href="https://www.linkedin.com/in/mimishalf/" target=_blank>LINKEDIN</a>
+					<a class="link" href="mailto:mimishalf@mac.com" target=_blank>EMAIL</a>
+					<a class="link" href="resources/mimishalf_resume.pdf" target=_blank>RESUME</a>
+				</div>
+			</div>
+			</div>
+		</div>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+		<script src="resources/js/loading.js"></script>
+		<script src="resources/js/gallery.js"></script>
+	</body> 
 </html>
