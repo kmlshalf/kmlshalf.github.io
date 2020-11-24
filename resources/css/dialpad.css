@@ -1,0 +1,19 @@
+.gallimg_1 {
+	width: 220px;
+}
+
+
+.gallimg_span {
+	width: 750px;
+}
+
+.gallimg_1:hover, .gallimg_span:hover {
+	cursor: pointer;
+	opacity: 0.8;
+	transition: 0.3s;
+}
+
+.gallimg_larger {
+	width: 600px;
+	margin: auto;
+}
