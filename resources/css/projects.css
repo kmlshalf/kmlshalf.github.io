@@ -342,3 +342,124 @@ li {
 .gallimg_large {
 	margin: auto;
 }
+
+.gallimg_1 {
+	width: 220px;
+}
+
+/*Dialpad-specific*/
+.gallimg_span {
+	width: 750px;
+}
+
+.gallimg_1:hover, .gallimg_span:hover {
+	cursor: pointer;
+	opacity: 0.8;
+	transition: 0.3s;
+}
+
+.gallimg_larger {
+	width: 600px;
+	margin: auto;
+}
+
+/*CSS FORMATTING SPECIFIC TO BUMBLEBEE SPACES PROJECT*/
+/*side by side images in Major Changes*/
+.sidebyside {
+	padding-top: 30px;
+	display: inline-flex;
+	padding-bottom: 30px;
+}
+
+@media screen and (max-width: 1080px) {
+ 	.sidebyside {
+ 		display: block;
+ 	}
+ }
+
+.sidetext {
+	height: 50%;
+	padding-left: 45px;
+	margin: auto;
+}
+
+@media screen and (max-width: 1080px) {
+ 	.sidetext {
+ 		padding-top: 30px;
+ 		padding-left: 0;
+ 	}
+ }
+
+.coloredtext {
+	color: #FB6842;
+	font-weight: 500;
+}
+
+/*for images that needed to be resized*/
+.resize { 
+	width: 800px;
+}
+
+@media screen and (max-width: 1080px) {
+ 	.resize {
+ 		width: 600px;
+ 	}
+ }
+
+ @media screen and (max-width: 800px) {
+ 	.resize {
+ 		width: 400px;
+ 	}
+ }
+
+ /*FINAL DESIGN SECTION FORMATTING*/
+.lefttext {
+	padding-top: 30px;
+	padding-bottom: 30px;
+	padding-right: 50px;
+	height: 50%;
+	margin: auto;
+}
+
+.white {
+	padding-top: 80px;
+	padding-bottom: 70px;
+}
+
+.righttext {
+	padding-top: 30px;
+	padding-bottom: 30px;
+	padding-left: 50px;
+	height: 50%;
+	margin: auto;
+}
+
+/*bampfaar specific*/
+#prototype {
+	margin-bottom: 80px;
+}
+
+.morepaddingtop {
+	padding-top: 40px;
+}
+
+.morepaddingbottom {
+	padding-bottom: 40px;
+}
+
+
+.medweighttitle {
+	font-weight: 500;
+}
+
+/*up-specific*/
+.gallimg_smallup {
+	width: 250px;
+}
+
+.gallimg_smallup:hover {
+	cursor: pointer;
+	opacity: 0.8;
+	transition: 0.3s;
+}
+
