@@ -1,4 +1,12 @@
+/*window load*/
+$(window).on('load', function(){
+  $( "#loader" ).fadeOut(500, function() {
+      // fadeOut complete. hide the loading div
+      $( "#loader" ).hide(); //makes page more lightweight 
+  });
+});
 
+/*home page nav functionality*/
 var activenav= '#work-navlink';
 var activecontent = 'work';
 var hidden_display = 'block';
@@ -88,4 +96,36 @@ for (var i = 0; i < btns.length; i++) {
     current[0].className = current[0].className.replace(" active2", "");
     this.className += " active2";
   });
+}
+
+/*gallery stuff*/
+
+// Open the Modal
+function openModal(n) {
+    var galleries = document.getElementsByClassName("modal");
+    galleries[n-1].style.display = "block";
+}
+
+// Close the Modal
+function closeModal(n) {
+  var galleries = document.getElementsByClassName("modal");
+    galleries[n-1].style.display = "none";
+}
+
+// index of prev opened image
+var prev_opened_img = 0;
+
+// show modal image, where n = index of that image
+function showImg(n) {
+  var i;
+  var images = document.getElementsByClassName("showimage");
+  console.log("IMAGES: ", images)
+
+  //checking to see if this is the first time a gallery image is being opened
+  if (prev_opened_img) {
+    images[prev_opened_img-1].style.display="none";
+  }
+
+  images[n-1].style.display = "block";
+  prev_opened_img = n;
 }
