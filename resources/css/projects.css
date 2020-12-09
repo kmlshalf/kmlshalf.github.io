@@ -320,7 +320,7 @@ li {
 /* The Close Button */
 .close {
   color: white;
-  position: absolute;
+  position: fixed;
   top: 10px;
   right: 25px;
   font-size: 35px;
@@ -341,10 +341,12 @@ li {
 
 .gallimg_large {
 	margin: auto;
+	padding-bottom: 200px;
 }
 
 .gallimg_1 {
 	width: 220px;
+	padding-bottom: 200px;
 }
 
 /*Dialpad-specific*/
@@ -361,6 +363,7 @@ li {
 .gallimg_larger {
 	width: 600px;
 	margin: auto;
+	padding-bottom: 200px;
 }
 
 /*CSS FORMATTING SPECIFIC TO BUMBLEBEE SPACES PROJECT*/
