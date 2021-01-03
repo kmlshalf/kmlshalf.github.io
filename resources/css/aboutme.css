@@ -12,6 +12,11 @@ h1 {
 	color: #FF704B;
 }
 
+h2 {
+	font-size: 36px;
+	color: #FF704B;
+}
+
 a {
 	text-decoration: none;
 	color: #FB6842;
@@ -71,4 +76,35 @@ a:hover {
 
 .bodyimg{
 	padding-top: 80px;
+}
+
+.addpaddingtop {
+	padding-top: 80px;
+}
+
+.addpaddingtopsmall {
+	padding-top: 20px;
+}
+
+.container { 
+	margin-bottom: 80px;
+}
+
+.footer-content {
+	padding-right: 24vw;
+	padding-left: 24vw;
+}
+
+.link {
+	font-weight: 500;
+	margin-right: 65px;
+	text-decoration: none;
+	color: #333333;
+	font-size: 24px;
+	line-height: 50px;
+}
+
+.link:hover {
+	color: #FB6842;
+	transition: 0.3s;
 }
