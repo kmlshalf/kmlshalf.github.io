@@ -1,7 +1,5 @@
 function setup() {
-  canvasDiv = document.getElementById("workarea");
-  var cnvs = createCanvas(900, 550);
-  cnvs.parent("workarea");
+  cnvs2.parent("workarea");
   colorchange = second() + 2;
   fill(50);
 }
