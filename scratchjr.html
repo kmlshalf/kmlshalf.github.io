@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Mimi Shalf | ScratchJr</title>
+		<meta charset="UTF-8"> 
+		<meta content="width=device-width, initial-scale=1 user-scalable=yes" name="viewport"/>
+		<link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="resources/css/projects.css">
+		<!-- <link rel="stylesheet" type="text/css" href="resources/css/bumblebeespaces.css"> -->
+
+		<!-- favicon -->
+		<link rel="apple-touch-icon" sizes="180x180" href="resources/img/favicon_io/apple-touch-icon.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="resources/img/favicon_io/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="resources/img/favicon_io/favicon-16x16.png">
+	</head>
+	<body>
+		<div id="loader"> 
+			<div id="loadingimg" class="center"></div>
+		</div>
+		<div id="all_content">
+			<div id="sidebar">
+				<div id="homebutton"><a href="index.html#work">◄ Back to home</div></a>
+				<ul id="menu">
+					<li class="menuitem"><a href="#overview">Overview</a></li>
+					<li class="menuitem"><a href="#palette">Skin Color Palette</a></li>
+					<li class="menuitem"><a href="#characters">Character Updates</a></li>
+					<li class="menuitem"><a href="#app">App Updates</a></li>
+					<li class="menuitem"><a href="#web">ScratchJr Web</a></li>
+				</ul>
+			</div>
+			<div id="main_content">
+				<div id="summary">
+					<h1>SCRATCHJR</h1>
+					<p>Making ScratchJr, a creative block coding app for younger children, more inclusive and accessible.</p>
+					<div id="segments">
+						<div id="role" class="seg">
+							<div class="title">Role</div>
+							<div class="desc">Designer</div>
+						</div>
+						<div id="tools" class="seg">
+							<div class="title">Tools</div>
+							<div class="desc">Figma, Illustrator</div>
+						</div>
+						<div id="team" class="seg">
+							<div class="title">Team</div>
+							<div class="desc">ScratchJr team</div>
+						</div>
+					</div>
+					<img id="hero" class="image" src="resources/img/scratchjr_img/skintonetesting.jpg"/>
+				</div>
+				<div id="overview" class="full_color_background section">
+					<h2>OVERVIEW</h2>
+					<p>ScratchJr is a creative coding app meant to be developmentally friendly to children under the age. After many years of occasional maintenance but no dedicated team, we have recently formed a small group to work on updating and maintaining ScratchJr.</p>
+					<p>As the designer on the ScratchJr team, I have been helping define the trajectory for our work to address the many requests and feature fixes that have accumulated over the years. Updating the characters to have more representative skin tones, overseeing the creation of new characters, and contributing to planning the work to put ScratchJr on the web are a few of my favorite and most impactful projects I have been working on for ScratchJr.</p>
+				</div>
+
+				<div id="palette" class="section">
+					<h2>SKIN COLOR PALETTE</h2>
+					<p>In ScratchJr, children are limited to using a set selection of colors for changing the characters that they use in their projects. Over the years, many educators, researchers, and parents have pointed out the distinct lack of brown skin tones in the color palette.</p>
+					<div class="callout">
+						<div class="text">
+							<div class="greyedtitle">THE PROBLEM</div>
+							<div class="highlighttext">Children struggled to represent themselves and their families in their projects because of the limited selection of colors and characters they were able to use.</div>
+						</div>
+					</div>
+					<p>I worked with another designer to create a set of six new skin tones to add to the ScratchJr color palette. We based our work off of the existing Bring Yourself into Scratch project, which had added more diverse and representative sprites to the main Scratch platform. The changes were added to the ScratchJr app at the start of 2022.</p>
+					<p>The old color palette:</p>
+					<img src="resources/img/scratchjr_img/oldcolors.jpeg"/>
+					<p>Exploring different hues and shades of brown:</p>
+					<div class="gallery">
+							<div class="row">
+								<div class="col">
+									<img class="gallimg_span" src="resources/img/scratchjr_img/skintonetesting.jpg" onClick="openModal(1);showImg(1)"/>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col">
+									<img class="gallimg_span" src="resources/img/scratchjr_img/skintonetesting2.jpg" onClick="openModal(1);showImg(2)"/>
+								</div>
+							</div>
+							<!--Modal Lightbox-->
+							<div class="modal">
+								<span class="close cursor" onclick="closeModal(1)">&times;</span>
+								<div class="modalContent">
+									<img class="gallimg_larger showimage" src="resources/img/scratchjr_img/skintonetesting.jpg"/>
+									<img class="gallimg_larger showimage" src="resources/img/scratchjr_img/skintonetesting2.jpg"/>
+								</div>
+							</div>
+						</div>
+					<p>The new color palette:</p>
+				</div>
+
+				<div id="characters" class="section">
+					<h2>CHARACTER UPDATES & NEW CHARACTERS</h2>
+					<p>After defining a new set of colors, I also worked on addressing the problems around changing a character's skin color and lack of representation in our set of people characters.</p>
+					<div class="subsection">
+						<h3>Changes to Existing Characters</h3>
+						<p>Previously, changing the skin color of a character -- especially to a darker tone -- made the character look unnatural.</p>
+						<p>Old character library:</p>
+						<img src="resources/img/scratchjr_img/oldcharacters.jpg"/>
+						<p>Changing skin colors:</p>
+						<img src="resources/img/scratchjr_img/comparison.jpeg"/>
+						<p>In addition, researchers observing children using ScratchJr discovered children were more likely to use the teen characters rather than the adult characters to represent their parents because all of the adult characters were white-presenting and didn't look like their family.</p>
+						<p>As a result, we made the following changes:</p>
+						<p> 1. Changed all of the character outlines to black so that their outlines remained a neutral color that would compliment any changes, and made their skin tones the ones from our new palette. We also added whites to their eyes to try to ensure facial features remained visible regardless of skin tone.</p>
+						<img src="resources/img/scratchjr_img/beforeafter.jpeg"/>
+						<img src="resources/img/scratchjr_img/range.jpeg"/>
+						<p>2. Changed the size of all the teens to match the height of the adults, and renamed everybody "person" instead of "Mom", "Teen", etc. so that children had a wider selection of adult-like characters.</p>
+						<img src="resources/img/scratchjr_img/heighttesting.jpeg"/>
+						<p>Seeing it in action!</p>
+						<img src="resources/img/scratchjr_img/inaction.jpeg"/>
+					</div>
+					<div class="subsection">
+						<h3>New Baby Characters</h3>
+						<p>Because the only baby available was white-presenting, I modified it to add two new baby characters and provide a wider selection of babies. Below are my explorations, reference photos, and the final product. I also went through multiple rounds of feedback with the DevTech and Creative Communities research groups, both who work closely with children using ScratchJr.</p>
+						<p>Experimentation:</p>
+						<div class="gallery">
+							<div class="row">
+								<div class="col">
+									<img class="gallimg_span" src="resources/img/scratchjr_img/fullfile.jpeg" onClick="openModal(2);showImg(3)"/>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col">
+									<img class="gallimg_1" src="resources/img/scratchjr_img/babies1.jpeg" onClick="openModal(2);showImg(4)"/>
+								</div>
+								<div class="col">
+									<img class="gallimg_1" src="resources/img/scratchjr_img/babies2.jpeg" onClick="openModal(2);showImg(5)"/>
+								</div>
+								<div class="col">
+									<img class="gallimg_1" src="resources/img/scratchjr_img/babies3.jpeg" onClick="openModal(2);showImg(6)"/>
+								</div>
+							</div>
+							<!--Modal Lightbox-->
+							<div class="modal">
+								<span class="close cursor" onclick="closeModal(2)">&times;</span>
+								<div class="modalContent">
+									<img class="gallimg_larger showimage" src="resources/img/scratchjr_img/fullfile.jpeg"/>
+									<img class="gallimg_larger showimage" src="resources/img/scratchjr_img/babies1.jpeg"/>
+									<img class="gallimg_larger showimage" src="resources/img/scratchjr_img/babies2.jpeg"/>
+									<img class="gallimg_larger showimage" src="resources/img/scratchjr_img/babies3.jpeg"/>
+								</div>
+							</div>
+						</div>
+						<p>Finalized baby characters:</p>
+						<img src="resources/img/scratchjr_img/finalbabies.png"/>
+						<img src="resources/img/scratchjr_img/yaybabies.png"/>
+					</div>
+					<div class="subsection">
+						<h3>Future Work</h3>
+						<p>These changes were the first steps to improving our character library. We will be continuing to change, add, and modify characters for better representation of the many cultures and people using ScratchJr.</p>
+					</div>
+				</div>
+
+				<div id="app" class="section">
+					<h2>App Updates</h2>
+					<p>In addition to adding new characters, I have been designing small fixes for features such as adding an import button to make it easier for teachers and students to import projects into the app.</p>
+					<img src="resources/img/scratchjr_img/importbuttongif.gif"/>
+				</div>
+
+				<div id="web" class="section">
+					<h2>Putting ScratchJr on the Web</h2>
+					<p>As chromebooks have become more prevalent in classrooms, more and more teachers have been requesting a web version of ScratchJr that their students can use more easily. We have begun working on this project and are in the process of releasing our first alpha prototype. To support this work, I have been documenting the assets and interactions in the current app to guide our decision-making and designing.</p>
+					<img src="resources/img/scratchjr_img/documentation.jpeg"/>
+				</div>
+				</div>
+
+				<div class="footer-content section">
+				<h1>ABOUT THIS WEBSITE.</h1>
+				<p>This is my constant work in progress (think: personalized tumblr blog).  I wanted to make a website that I could easily add to and that would grow with me.  Check back to see what I do!
+				</p>
+				<div class="socials">
+					<a class="link" href="https://www.instagram.com/pamimus/" target=_blank>INSTAGRAM</a>
+					<a class="link" href="https://www.linkedin.com/in/mimishalf/" target=_blank>LINKEDIN</a>
+					<a class="link" href="mailto:kmlshalf@gmail.com" target=_blank>EMAIL</a>
+					<a class="link" href="resources/mimishalf_resume.pdf" target=_blank>RESUME</a>
+				</div>
+			</div>
+			</div>
+		</div>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+		<script src="resources/js/scripts.js"></script>
+	</body> 
+</html>
